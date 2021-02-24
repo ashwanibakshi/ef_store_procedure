@@ -35,7 +35,6 @@ namespace proc
                 dp.name = textBox1.Text;
                 dpt.departments.Add(dp);
                 dpt.SaveChanges();
-                //var i = dpt.Database.SqlQuery<department>("exec department_Insert @name", para1);
             }
         }
     }

@@ -7,15 +7,15 @@ namespace dept.Migrations
     {
         public override void Up()
         {
-            //CreateTable(
-            //    "dbo.department",
-            //    c => new
-            //        {
-            //            id = c.Int(nullable: false, identity: true),
-            //            name = c.String(maxLength: 100, unicode: false),
-            //        })
-            //    .PrimaryKey(t => t.id);
-            
+            CreateTable(
+                "dbo.department",
+                c => new
+                {
+                    id = c.Int(nullable: false, identity: true),
+                    name = c.String(maxLength: 100, unicode: false),
+                })
+                .PrimaryKey(t => t.id);
+
             CreateStoredProcedure(
                 "dbo.department_Insert",
                 p => new
